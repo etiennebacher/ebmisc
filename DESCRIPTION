@@ -15,3 +15,7 @@ LazyData: true
 RoxygenNote: 7.1.1
 URL: https://github.com/etiennebacher/ebmisc
 BugReports: https://github.com/etiennebacher/ebmisc/issues
+Imports: 
+    foreman,
+    purrr
+Remotes: git::https://github.com/yonicd/carbonate.git
