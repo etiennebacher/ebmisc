@@ -4,11 +4,19 @@
 \alias{unused_functions}
 \title{Find unused functions}
 \usage{
-unused_functions()
+unused_functions(files = NULL)
+}
+\arguments{
+\item{files}{List of files in which to search. If NULL, all .R files are searched in.}
 }
 \value{
 Names of unused functions
 }
 \description{
 Find unused functions
+}
+\examples{
+\dontrun{
+unused_functions(files = c("some_file.R", "folder/another_file.R"))
+}
 }
