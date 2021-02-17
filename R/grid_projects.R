@@ -34,16 +34,25 @@ make_card_project <- function(
   button_link = NULL
 ) {
 
-  shiny::withTags(
+  x <- shiny::withTags(
     div(class = "card",
         div(class = "card-text",
-            h4(a(href = title_link, title)),
+            h4(a()),
             div(class = "article-style",
                 p(description)
               ),
-            a(href = button_link, button)
+            a()
            )
       )
   )
 
+  # Can't add directly in a()
+
+  x$children[[1]]$children[[1]]$children[[1]]$attribs[["href"]] <- title_link
+  x$children[[1]]$children[[1]]$children[[1]]$children <- title
+
+  x$children[[1]]$children[[3]]$attribs[["href"]] <- button_link
+  x$children[[1]]$children[[3]]$children <- button
+
+  return(x)
 }
