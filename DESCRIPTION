@@ -18,4 +18,4 @@ BugReports: https://github.com/etiennebacher/ebmisc/issues
 Imports: 
     foreman,
     purrr
-Remotes: git::https://github.com/yonicd/carbonate.git
+Remotes: yonicd/foreman
