@@ -37,11 +37,11 @@ make_card_project <- function(
   x <- shiny::withTags(
     div(class = "card",
         div(class = "card-text",
-            h4(a()),
+            h4(a(target="_blank")),
             div(class = "article-style",
                 p(description)
               ),
-            a()
+            a(target="_blank")
            )
       )
   )
