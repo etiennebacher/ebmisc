@@ -7,7 +7,7 @@
 month_to_number(month_name)
 }
 \arguments{
-\item{month_name}{Month name (partial match authorized)}
+\item{month_name}{Month name or vector of month names (partial match authorized)}
 }
 \value{
 An integer
