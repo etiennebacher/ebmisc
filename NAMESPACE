@@ -3,4 +3,5 @@
 export(is_package)
 export(make_card_project)
 export(make_grid_project)
+export(month_to_number)
 export(unused_functions)
