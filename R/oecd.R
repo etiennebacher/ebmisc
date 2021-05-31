@@ -1,4 +1,5 @@
 #' Print the R code to make the vector of 38 OECD countries used in Beine et al. 2020
+#' @export
 
 oecd_countries <- function() {
 
