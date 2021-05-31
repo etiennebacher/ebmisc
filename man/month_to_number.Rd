@@ -10,7 +10,7 @@ month_to_number(month_name)
 \item{month_name}{Month name or vector of month names (partial match authorized)}
 }
 \value{
-An integer
+A character indicating month number
 }
 \description{
 Convert month name to month number

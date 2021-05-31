@@ -2,7 +2,7 @@
 #'
 #' @param month_name Month name or vector of month names (partial match authorized)
 #'
-#' @return An integer
+#' @return A character indicating month number
 #' @export
 #'
 
@@ -12,7 +12,8 @@ month_to_number <- function(month_name) {
     month_names = c("January", "February", "March", "April", "May",
                     "June", "July", "August", "September", "October",
                     "November", "December"),
-    month_number = seq(1, 12, 1)
+    month_number = c("01", "02", "03", "04", "05", "06", "07",
+                     "08", "09", "10", "11", "12")
   )
 
   indices <- sapply(month_name, function(x) {
